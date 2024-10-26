@@ -2,8 +2,9 @@ name: Release Obsidian plugin
 
 on:
   push:
-    tags:
-      - "*"
+    # 这里设置为分支的任何提交都会触发
+    branches:
+      - '**'
 
 jobs:
   build:
